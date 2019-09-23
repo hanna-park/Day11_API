@@ -45,7 +45,9 @@ public class StudentMenu {
 					sv.view(student);
 					break;
 				case 4:
-					
+					student  = ss.studentSearch(students);
+					ss.studentDelete(students, student);
+					sv.view(students);
 					break;
 				case 5:
 					

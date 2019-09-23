@@ -7,8 +7,17 @@ public class StudentService {
 	private Scanner sc;
 	
 	//이름을 입력해서 해당학생정보를 삭제
-	public void studentDelete(){
+	public void studentDelete(ArrayList<Student> students, Student student){
+		//students.remove(student);
+		System.out.println("학생의 이름을 입력하세요.");
+		String name = sc.next();
 		
+		for(int i=0; i< students.size();i++) {
+			if(students.get(i).getName().equals(name)) {
+				students.remove(i);
+				break;
+			}
+		}
 	}
 	
 	
