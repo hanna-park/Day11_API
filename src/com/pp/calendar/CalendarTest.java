@@ -19,6 +19,7 @@ public class CalendarTest {
 		System.out.println(mon+1+"월");
 		int day =cal.get(Calendar.DATE);
 		System.out.println(day+"일");
+		
 	}
 
 }
